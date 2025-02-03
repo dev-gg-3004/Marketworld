@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "743012255535",
+    "project_id": "marketworld-cec28",
+    "storage_bucket": "marketworld-cec28.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:743012255535:android:c5fe84999725b659f783da",
+        "android_client_info": {
+          "package_name": "com.marketworld"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "743012255535-ual37b0muc02umv6n0di8dsanokjefmk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.marketworld",
+            "certificate_hash": "2d3271561c046fe02f2f18e61d859af18adfd908"
+          }
+        },
+        {
+          "client_id": "743012255535-amohs2lqicifdls47vvari3a4ljsdain.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAScDtc7G2SaeTS_O8ojJuUj4vnfuVlutI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "743012255535-amohs2lqicifdls47vvari3a4ljsdain.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
