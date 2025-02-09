@@ -36,11 +36,15 @@ export default function ForgetPassword({navigation}) {
     function handleOnClickSubmit(){
         let isSuccess=false;
         setShowEmptyMsg(true)
+console.log('===================>storeUserData=================>',storeUserData,fieldData.userName);
 
         if(isArrayNotNullUndefined(storeUserData) && isUsername(fieldData.userName)) {
             
             for(let i = 0;i<storeUserData.length;i++){
                 let obj=storeUserData[i]
+                console.log(typeof(fieldData.userName));
+                console.log(typeof(obj.userName));
+                
                 if(fieldData.userName===obj.userName ){
                     console.log(obj);
                     console.log("i",i);

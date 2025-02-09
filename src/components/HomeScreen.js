@@ -35,9 +35,11 @@ import CustomAlert from './common/customAlert/CustomAlert';
 import { requestUserPermission } from '../utils/MessagePermission';
 import ErrorBoundaryScreen from './common/ErrorBoundaryScreen/Index';
 import Loader from './common/Loader/Index';
-// import AppWrapper from '../utils/RealmTask';
 import AntDesign from 'react-native-vector-icons/AntDesign'
-
+import ImageResizer from '@bam.tech/react-native-image-resizer';
+import RNFetchBlob from "rn-fetch-blob";
+import RNFS from "react-native-fs";
+import ImageSize from 'react-native-image-size'
 
 const {Toast }=NativeModules  
 
@@ -53,17 +55,9 @@ const HomeScreen = ({navigation,...props}) => {
   const [profileImage, setProfileImage] = useState();
   let dispatch=useDispatch();
   
-  // useEffect(()=>{
-  //  console.log("counterValueArray ==>HomeScreen",counterValueArray);
-  // },[])
-  useEffect(()=>{
-    // SecureScreenCaptureModule.setFlags();
-    // requestUserPermission()
-    getUserSession();
 
-    // if(true){
-    //   throw new Error("custom error")
-    // }
+  useEffect(()=>{
+    getUserSession();
   },[])
   
   async function getUserSession(){
@@ -92,35 +86,24 @@ const HomeScreen = ({navigation,...props}) => {
   function handleOnPressButton(item) {
     switch (item) {
       case 'Marketwatch':
-        navigation.navigate('Market');
-        break;
-      case 'News':
-        navigation.navigate('News');
-        break;
-      case 'Calculator':
-        navigation.navigate('Calculator');
-        break;
-      case 'CheckCagr':
-        navigation.navigate('CheckCAGR');
-        break;
-      case 'View Profile':
-        navigation.navigate('Profile');
+        navigation.navigate('Marketwatch');
         break;
       case "IPO's":
         navigation.navigate('ipo');
         break;
-      case "Tabs":
-        navigation.navigate('TopTabHome');
+      case 'News':
+        navigation.navigate('News');
         break;
-      case "StockTabs":
-        navigation.navigate('stockTopTabHome');
+      case 'CheckCagr':
+        navigation.navigate('CheckCAGR');
         break;
-      case "MapsHome":
-        navigation.navigate('MapsHome');
+      case 'Calculator':
+        navigation.navigate('Calculator');
         break;
-      case "AllLocation":
-        navigation.navigate('AllLocation');
+      case 'View Profile':
+        navigation.navigate('Profile');
         break;
+      
     }
   }
   
@@ -128,14 +111,9 @@ const HomeScreen = ({navigation,...props}) => {
     {value: 'Marketwatch', image: marketimage},
     {value: "IPO's", image: ipoimg},
     {value: 'News', image: Newsimg},
-    // {value: 'CheckCagr', image: cagrimg},
-    // {value: 'Calculator', image: calculatorimg},
+    {value: 'CheckCagr', image: cagrimg},
+    {value: 'Calculator', image: calculatorimg},
     {value: 'View Profile', image: Profileimg},
-    {value: 'Tabs', image: marketimage},
-    {value: 'StockTabs', image: marketimage},
-    // {value: 'BottomTabs', image: marketimage},
-    {value: 'MapsHome', image: marketimage},
-    {value: 'AllLocation', image: marketimage},
   ];
 
   function renderButtons() {
@@ -220,45 +198,128 @@ const HomeScreen = ({navigation,...props}) => {
 
   function onPressOpenCamera() {
     let options = {
-      storageOption: {
-        path: '../../../assests/images',
-        mediaType: 'photo',
-      },
+  
       includeBase64: true,
       saveToPhotos: true,
+      quality: 1,
+      noData: true,
+      rotation: 0,
+      storageOptions: {
+        skipBackup: true,
+        path: "images",
+        mediaType: 'photo',
+      },
     };
     launchCamera(options, response => {
       setShowImgEditOption(false);
       if (response.didCancel) {
         setShowImgEditOption(false);
-      } else if (response.errorMessage) {
+      } else if (response.error) {
+        setShowImgEditOption(false);
         // console.log(response.errorMessage);
       } else {
-        const imageSource = response.assets[0].uri;
-        setProfileImage(imageSource);
-        updateUserImage(imageSource);
+         
+        const [tempResponse]=response.assets
 
+        tempResponse.size = tempResponse.fileSize;
+        tempResponse.name = response.fileName;
+        compressionHandler(tempResponse);
       }
     });
   }
 
+  const compressionHandler = (res) => {
+    if (res.size < 150000) {
+      prepareFile(res);
+    } 
+    else if (res.size < 30000000) {
+      res.quality = 50;
+      res.width = 600;
+      res.height = 800;
+    
+      imageCompression(res, compressionHandler);
+    }
+  };
+  const getSized = async (res) => {
+    const { rotation } = await ImageSize.getSize(res)
+    return rotation
+  }
+
+  const imageCompression = (imageData, callback) => {
+    getSized(imageData?.uri).then((response) =>{
+    let rotation = 0;
+    if (response == 90) {
+      rotation = 90;
+    } else if (response == 270) {
+      rotation = -90;
+    }
+    RNFS.readFile(imageData.uri, "base64").then((based) => {
+      ImageResizer.createResizedImage(
+        `data:${imageData.type};base64,${based}`, // imageData.uri,
+        imageData.width, //600
+        imageData.height, //800
+        "JPEG",
+        imageData.quality,
+        rotation
+      )
+        .then((responses) => {
+          callback(responses);
+        })
+        .catch((err) => {
+          console.log("Failed base64");
+          console.log("imageCompression err => ", err);
+          setShowImgEditOption(false);
+        });
+    });
+  })
+  };
+
+
+  const prepareFile = (res) => {
+    RNFetchBlob.fs.readFile(res?.path || res?.uri, "base64").then((data) => {
+      if (!res.type) {
+        res.type = `image/${res.name.split(".").slice(-1)[0]}`;
+      }
+
+      let imageId = parseInt(Math.random() * 10000000);
+      let name = res.name || res?.fileName;
+      let image = `data:${res.type};base64,${data}`;
+      setProfileImage(image);
+      setShowImgEditOption(false);
+      updateUserImage(image)
+    }).catch((err) => {
+      console.log("prepareFile err => ", err);
+      setShowImgEditOption(false);
+    });
+  };
+
   function onPressOpenGallery() {
     let options = {
-      storageOption: {
-        path: '../../../assests/images',
+      includeBase64: true,
+      saveToPhotos: true,
+      quality: 1,
+      noData: true,
+      rotation: 0,
+      storageOptions: {
+        skipBackup: true,
+        path: "images",
         mediaType: 'photo',
       },
-      includeBase64: true,
     };
     launchImageLibrary(options, response => {
+      setShowImgEditOption(false);
       if (response.didCancel) {
         setShowImgEditOption(false);
-      } else if (response.errorMessage) {
-      } else {
-        const imageSource = response.assets[0].uri;
-        setProfileImage(imageSource);
+      } else if (response.error) {
         setShowImgEditOption(false);
-        updateUserImage(imageSource)
+        // console.log(response.errorMessage);
+      } else {
+         
+        const [tempResponse]=response.assets
+
+        tempResponse.size = tempResponse.fileSize;
+        tempResponse.name = response.fileName;
+        compressionHandler(tempResponse);
       }
     });
   }
@@ -272,7 +333,6 @@ const HomeScreen = ({navigation,...props}) => {
     <KeyboardAvoidingView
       behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
       style={{height: '100%',backgroundColor:showLoader?"lightgrey":"#f8f8ff",opacity :showLoader ? 0.2 : 1}}>
-      <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
         <SafeAreaView style={{flex: 1}}>
         <ErrorBoundaryScreen >
           <Modal animationType="slide" transparent={true} visible={showLoader}>
@@ -319,7 +379,7 @@ const HomeScreen = ({navigation,...props}) => {
           )} */}
 
           {renderButtons()}
-          <View style={{height:"30%"}}>
+          <View style={{height:"30%",width:'100%'}}>
 
             { showLoader && <ActivityIndicator   size="small" color="#0000ff"/> }
 
@@ -330,7 +390,6 @@ const HomeScreen = ({navigation,...props}) => {
 
 
         </SafeAreaView>
-      </TouchableWithoutFeedback>
     </KeyboardAvoidingView>
   );
 };
@@ -389,44 +448,3 @@ const styles = StyleSheet.create({
 });
 
 export default HomeScreen;
-
-// import { useEffect } from "react";
-// import { Button, View } from "react-native";
-// import { WebView } from 'react-native-webview';
-// import { useDispatch } from "react-redux";
-// import { getNewsListStart } from "../redux/actions/NewsActions";
-// import WebViews from "./common/webview/WebViews";
-
-// export default function HomeScreen({ navigation }) {
-
-//   let NSEURI= 'https://www.nseindia.com/'
-
-//   return  <WebViews URI={NSEURI}/>
-// }
-
-
-
-// (akash==="akash||number===18&&job===true)
-
-
-
-// import { View } from 'react-native';
-
-// const App = () => {
-//   const viewRef = useRef(null);
-
-//   useEffect(() => {
-//     // Set the FLAG_SECURE flag to prevent screen capture
-//     viewRef.current.setNativeProps({
-//       flags: View.SCREEN_STATE_ON,
-//     });
-//   }, []);
-
-//   return (
-//     <View ref={viewRef}>
-//       {/* Your app content goes here */}
-//     </View>
-//   );
-// };
-
-// export default App;

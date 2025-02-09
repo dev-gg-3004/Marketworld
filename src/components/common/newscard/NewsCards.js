@@ -53,7 +53,10 @@ const route=useRoute();
     let temp=props.id;
     console.log(temp);
     let data=props.data
-    navigation.navigate('NewsDetails' ,{dataId:temp})
+    console.log('=============>data=========>',data);
+    
+    // navigation.navigate('NewsDetails' ,{dataId:temp})
+    navigation.navigate('NewsDetails' ,{ title: data?.title  })
   }
 
   useEffect(() => {
@@ -106,13 +109,15 @@ function handleOnPressShare(){
     // console.log("generatedLink",generatedLink);
   }
   function renderNewsImage() {
-    const image={uri:props.newsimg}
+    const defaultImage = require("../../../assests/images/defaultnewsimage.jpg");
     return (
-      <View style={{height:"60%",width:"100%"}}>
-
-        <Image source={image} style={{...Style.imageStyle, }} />
+      <View style={{ height: "60%", width: "100%" }}>
+        <Image
+          source={props.newsimg ? { uri: props.newsimg } : defaultImage}
+          style={Style.imageStyle}
+        />
       </View>
-    )
+    );
   }
 
   function renderNewsContent() {

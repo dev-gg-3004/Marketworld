@@ -1,6 +1,7 @@
 import _ from 'lodash';
 import React, {useEffect, useState} from 'react';
 import {
+  Alert,
   Image,
   Keyboard,
   KeyboardAvoidingView,
@@ -150,7 +151,10 @@ export default function LoginNew({navigation}) {
             <>
           <Text style={styles.orText}>OR</Text>
 
-          <TouchableOpacity style={styles.loginByGoogleView}>
+          <TouchableOpacity 
+            style={styles.loginByGoogleView}
+            onPress={() => Alert.alert("Coming Soon", "This feature is coming soon!")}
+          >
             <Image source={googleIcon} style={styles.googleIconStyle} />
             <Text style={styles.loginByGoogleText}>Login with Google</Text>
           </TouchableOpacity>

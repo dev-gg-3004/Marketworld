@@ -1,27 +1,3 @@
-const conf = {
-    "appSource": "12122",
-    "appName": "5P51082513",
-    "userId": "E6DVHrr7MuW",
-    "password": "ad2Amdn38fK",
-    "userKey": "NTQkcNfoZLreZk2Ozen31L2DcRbplHvt",
-    "encryptionKey": "TFMgVawGSDpd1bA7FukrHRNvEQmugCLk"
-}
-
-
-// Valid up to	3/30/2050 12:00:00 PM
-
-// {   id:"",
-// ipoName:"",
-// listingAT:"",
-// openDate:"",
-// closeDate:"",
-// listingDate:"",
-// offerPrice:"",
-// lotSize:"",
-// subScriptions:"",
-// companyLogo:"",
-// companyDetails:""
-// },
 
 
 
@@ -966,12 +942,12 @@ export const membersDetails=[
      "userName": "Gopal_123",
      "email": "gg@gmail.com",
      "password": "Gopal@123",
-     "contactNo": "9892408402",
-     "accountNo": "35372883639",
-     "pancardNo": "CXVPG1567J",
-     "IfscCode": "Sbin0008373",
-     "confirmAccountNo": "35372883640",
-     "aadharNo": "672326872311",
+     "contactNo": "9892408434",
+     "accountNo": "353725683639",
+     "pancardNo": "CXVPG156vj",
+     "IfscCode": "Sbin0006666",
+     "confirmAccountNo": "353725683639",
+     "aadharNo": "65654654656655",
      "userid": "1",
      "confirmPassword": "",
      "userImage":""

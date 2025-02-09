@@ -11,6 +11,8 @@ import com.facebook.react.shell.MainReactPackage;
 import java.util.Arrays;
 import java.util.ArrayList;
 
+// @bam.tech/react-native-image-resizer
+import com.reactnativeimageresizer.ImageResizerPackage;
 // @react-native-async-storage/async-storage
 import com.reactnativecommunity.asyncstorage.AsyncStoragePackage;
 // @react-native-community/geolocation
@@ -25,10 +27,14 @@ import io.invertase.firebase.dynamiclinks.ReactNativeFirebaseDynamicLinksPackage
 import io.invertase.firebase.messaging.ReactNativeFirebaseMessagingPackage;
 // react-native-device-info
 import com.learnium.RNDeviceInfo.RNDeviceInfo;
+// react-native-fs
+import com.rnfs.RNFSPackage;
 // react-native-gesture-handler
 import com.swmansion.gesturehandler.RNGestureHandlerPackage;
 // react-native-image-picker
 import com.imagepicker.ImagePickerPackage;
+// react-native-image-size
+import com.existfragger.rnimagesize.RNImageSizePackage;
 // react-native-maps
 import com.airbnb.android.react.maps.MapsPackage;
 // react-native-pager-view
@@ -47,6 +53,8 @@ import com.oblador.vectoricons.VectorIconsPackage;
 import com.reactnativecommunity.webview.RNCWebViewPackage;
 // realm
 import io.realm.react.RealmReactPackage;
+// rn-fetch-blob
+import com.RNFetchBlob.RNFetchBlobPackage;
 
 public class PackageList {
   private Application application;
@@ -92,6 +100,7 @@ public class PackageList {
   public ArrayList<ReactPackage> getPackages() {
     return new ArrayList<>(Arrays.<ReactPackage>asList(
       new MainReactPackage(mConfig),
+      new ImageResizerPackage(),
       new AsyncStoragePackage(),
       new GeolocationPackage(),
       new NetInfoPackage(),
@@ -99,8 +108,10 @@ public class PackageList {
       new ReactNativeFirebaseDynamicLinksPackage(),
       new ReactNativeFirebaseMessagingPackage(),
       new RNDeviceInfo(),
+      new RNFSPackage(),
       new RNGestureHandlerPackage(),
       new ImagePickerPackage(),
+      new RNImageSizePackage(),
       new MapsPackage(),
       new PagerViewPackage(),
       new ReanimatedPackage(),
@@ -109,7 +120,8 @@ public class PackageList {
       new SplashScreenReactPackage(),
       new VectorIconsPackage(),
       new RNCWebViewPackage(),
-      new RealmReactPackage()
+      new RealmReactPackage(),
+      new RNFetchBlobPackage()
     ));
   }
 }

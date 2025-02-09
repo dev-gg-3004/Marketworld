@@ -58,11 +58,14 @@ export  function* getMembersDetails() {
 function* startUpdateMemmbersDetails(action){
     try{
         const response=yield  call(UpdateMembersDataAPI,action.payload)
+        console.log('==============>response',response);
+        
         if(response.status===200){
             yield put(updateMemberDataSuccess(response.data,action.meta))
         }
     }
     catch (error) {
+        console.log('=================>error',error,error.response.data);
         yield console.log(error);
     }
 }

@@ -64,6 +64,7 @@ export default function MarketSummary() {
             keyExtractor={(item,index) => index}
             horizontal
             scrollEnabled={true}
+            nestedScrollEnabled={true}
             renderItem={({item,i})=>{
             return(
               <View style={{height:100,width:300,margin:5}}>

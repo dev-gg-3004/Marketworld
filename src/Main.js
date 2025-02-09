@@ -7,9 +7,7 @@ import { createDrawerNavigator } from '@react-navigation/drawer'
 import AuthHome from './AuthHome';
 import { getSession, memberDataKey, removeItemValue } from './utils/Session';
 import { useDispatch, useSelector } from 'react-redux';
-import messaging from '@react-native-firebase/messaging';
 import { setValidUserFalse } from './redux/actions/LoginAction';
-import NewsDetails from './components/screen/news/NewsDetails';
 
 const Stack = createNativeStackNavigator();
 const Drawer = createDrawerNavigator();
@@ -25,40 +23,11 @@ export default function Main() {
     checkSession()
   },[store.activeMember])
 
-  const config = {
-    screens: {
-     
-      authHome: {
-        path: 'authHome/signupNew',
-      
-      },
-    },
-  };
-
-
-  const linking = {
-    prefixes: [ 'https://marketworld.com', 'marketworld://',],
-    config
-  };
-
   useEffect(()=>{
     if(!store.validUser){
       setIsSession(false)
     }
   },[store.validUser])
-
-  // useEffect(()=>{
-
-  //   messaging().setBackgroundMessageHandler(async res=>{
-  //     console.log("res",res)
-
-  //   })
-
-  //   messaging().onMessage(async res =>{
-  //     console.log(res);
-  //   })
-
-  // }, [])
 
 
   function handleOnPressIcon(){
@@ -77,25 +46,21 @@ export default function Main() {
     let clear = await removeItemValue(memberDataKey());
     dispatch(setValidUserFalse())
     setIsSession(false)
-   
   }
   
-// [https://support.google.com/firebase/answer/9021429]
 
-//https://marketworldlink.page.link/tV8u
   return (
     <Fragment>
-    <NavigationContainer  linking={linking}>
+    <NavigationContainer>
     { !isSession ?
-      
-      <Stack.Navigator screenOptions={{
-        headerShown: false
-        }} >
+      <Stack.Navigator 
+        screenOptions={{
+          headerShown: false
+        }} 
+      >
         <Stack.Screen name='authHome' component={AuthHome} />
       </Stack.Navigator>
-
-       :
-
+      :
       <Drawer.Navigator drawerContent={props=><DrawerProfile {...props} />} 
         screenOptions={{
         swipeEnabled:true,

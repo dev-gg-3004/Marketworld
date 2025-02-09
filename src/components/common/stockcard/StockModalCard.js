@@ -4,7 +4,6 @@ import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import { notNullUndefined } from '../../../utils/Validation'
 import TouchableButton from '../TouchableButton/Index'
 import { useNavigation } from '@react-navigation/native'
-import WebViews from '../webview/WebViews'
 
 export default function StockModalCard({dataItem}) {
 

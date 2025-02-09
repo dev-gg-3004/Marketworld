@@ -14,18 +14,22 @@ MERGED from [:react-native-firebase_messaging] /home/v2stech/My folder/gitProjec
 MERGED from [:react-native-firebase_app] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-32:12
 MERGED from [com.google.firebase:firebase-analytics:21.2.0] /home/v2stech/.gradle/caches/transforms-3/3c7bb22fa7d0996397237cf9d91664c2/transformed/jetified-firebase-analytics-21.2.0/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-splash-screen] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/react-native-splash-screen/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:bam.tech_react-native-image-resizer] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/@bam.tech/react-native-image-resizer/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-async-storage_async-storage] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/@react-native-async-storage/async-storage/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-community_geolocation] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/@react-native-community/geolocation/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-community_netinfo] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/@react-native-community/netinfo/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-12:12
 MERGED from [:react-native-device-info] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/react-native-device-info/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-fs] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/react-native-fs/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-gesture-handler] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/react-native-gesture-handler/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-image-picker] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-21:12
+MERGED from [:react-native-image-size] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/react-native-image-size/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-maps] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/react-native-maps/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-pager-view] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/react-native-pager-view/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-safe-area-context] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/react-native-safe-area-context/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-screens] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/react-native-screens/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-webview] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-21:12
 MERGED from [:realm] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/realm/react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:rn-fetch-blob] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-45:12
 MERGED from [com.facebook.react:react-native:0.70.6] /home/v2stech/.gradle/caches/transforms-3/bf9fffbce406bda66ef5cb0164ba8507/transformed/jetified-react-native-0.70.6-debug/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/v2stech/.gradle/caches/transforms-3/eb7552118701046f2690e9b7599e93ad/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.facebook.react:hermes-engine:0.70.6] /home/v2stech/.gradle/caches/transforms-3/ef939b4308d0437abd406177f8e3920d/transformed/jetified-hermes-engine-0.70.6-debug/AndroidManifest.xml:2:1-9:12
@@ -156,6 +160,8 @@ MERGED from [:react-native-firebase_dynamic-links] /home/v2stech/My folder/gitPr
 MERGED from [:react-native-firebase_dynamic-links] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/@react-native-firebase/dynamic-links/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-67
 MERGED from [:react-native-firebase_messaging] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-67
 MERGED from [:react-native-firebase_messaging] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-67
+MERGED from [:rn-fetch-blob] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:13:5-67
+MERGED from [:rn-fetch-blob] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:13:5-67
 MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.8] /home/v2stech/.gradle/caches/transforms-3/db1428798f80c37830bd99f22be9c97c/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:25:5-67
 MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.8] /home/v2stech/.gradle/caches/transforms-3/db1428798f80c37830bd99f22be9c97c/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:25:5-67
 MERGED from [com.google.android.gms:play-services-measurement-api:21.2.0] /home/v2stech/.gradle/caches/transforms-3/5c1afb37ce8b08496221b25c345b2907/transformed/jetified-play-services-measurement-api-21.2.0/AndroidManifest.xml:22:5-67
@@ -196,6 +202,8 @@ MERGED from [:react-native-webview] /home/v2stech/My folder/gitProjects/Marketwo
 MERGED from [:react-native-webview] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-19:19
 MERGED from [:realm] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/realm/react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-20
 MERGED from [:realm] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/realm/react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-20
+MERGED from [:rn-fetch-blob] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:33:5-43:19
+MERGED from [:rn-fetch-blob] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:33:5-43:19
 MERGED from [com.facebook.react:react-native:0.70.6] /home/v2stech/.gradle/caches/transforms-3/bf9fffbce406bda66ef5cb0164ba8507/transformed/jetified-react-native-0.70.6-debug/AndroidManifest.xml:9:5-20
 MERGED from [com.facebook.react:react-native:0.70.6] /home/v2stech/.gradle/caches/transforms-3/bf9fffbce406bda66ef5cb0164ba8507/transformed/jetified-react-native-0.70.6-debug/AndroidManifest.xml:9:5-20
 MERGED from [com.google.firebase:firebase-messaging:23.1.1] /home/v2stech/.gradle/caches/transforms-3/44e5ecc664426ae3cb09dbf938a1b6da/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:30:5-59:19
@@ -366,6 +374,8 @@ MERGED from [com.google.firebase:firebase-analytics:21.2.0] /home/v2stech/.gradl
 MERGED from [com.google.firebase:firebase-analytics:21.2.0] /home/v2stech/.gradle/caches/transforms-3/3c7bb22fa7d0996397237cf9d91664c2/transformed/jetified-firebase-analytics-21.2.0/AndroidManifest.xml:5:5-44
 MERGED from [:react-native-splash-screen] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/react-native-splash-screen/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-splash-screen] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/react-native-splash-screen/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:bam.tech_react-native-image-resizer] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/@bam.tech/react-native-image-resizer/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:bam.tech_react-native-image-resizer] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/@bam.tech/react-native-image-resizer/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-async-storage_async-storage] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/@react-native-async-storage/async-storage/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-async-storage_async-storage] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/@react-native-async-storage/async-storage/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-community_geolocation] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/@react-native-community/geolocation/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
@@ -374,10 +384,14 @@ MERGED from [:react-native-community_netinfo] /home/v2stech/My folder/gitProject
 MERGED from [:react-native-community_netinfo] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/@react-native-community/netinfo/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-device-info] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/react-native-device-info/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-device-info] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/react-native-device-info/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-fs] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/react-native-fs/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-fs] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/react-native-fs/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-gesture-handler] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/react-native-gesture-handler/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-gesture-handler] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/react-native-gesture-handler/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-image-picker] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-image-picker] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-image-size] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/react-native-image-size/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-image-size] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/react-native-image-size/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-maps] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/react-native-maps/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-maps] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/react-native-maps/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-pager-view] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/react-native-pager-view/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
@@ -390,6 +404,8 @@ MERGED from [:react-native-webview] /home/v2stech/My folder/gitProjects/Marketwo
 MERGED from [:react-native-webview] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:realm] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/realm/react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:realm] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/realm/react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:rn-fetch-blob] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:rn-fetch-blob] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.react:react-native:0.70.6] /home/v2stech/.gradle/caches/transforms-3/bf9fffbce406bda66ef5cb0164ba8507/transformed/jetified-react-native-0.70.6-debug/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.react:react-native:0.70.6] /home/v2stech/.gradle/caches/transforms-3/bf9fffbce406bda66ef5cb0164ba8507/transformed/jetified-react-native-0.70.6-debug/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/v2stech/.gradle/caches/transforms-3/eb7552118701046f2690e9b7599e93ad/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
@@ -616,12 +632,16 @@ uses-permission#android.permission.ACCESS_WIFI_STATE
 ADDED from [com.facebook.flipper:flipper:0.125.0] /home/v2stech/.gradle/caches/transforms-3/e4194d73fe93b3c50d9bc6a16cde53c1/transformed/jetified-flipper-0.125.0/AndroidManifest.xml:16:5-76
 MERGED from [:react-native-community_netinfo] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/@react-native-community/netinfo/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-76
 MERGED from [:react-native-community_netinfo] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/@react-native-community/netinfo/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-76
+MERGED from [:rn-fetch-blob] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:28:5-76
+MERGED from [:rn-fetch-blob] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:28:5-76
 	android:name
 		ADDED from [com.facebook.flipper:flipper:0.125.0] /home/v2stech/.gradle/caches/transforms-3/e4194d73fe93b3c50d9bc6a16cde53c1/transformed/jetified-flipper-0.125.0/AndroidManifest.xml:16:22-73
 uses-permission#android.permission.WAKE_LOCK
 ADDED from [:react-native-firebase_dynamic-links] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/@react-native-firebase/dynamic-links/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-68
 MERGED from [:react-native-firebase_messaging] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-68
 MERGED from [:react-native-firebase_messaging] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-68
+MERGED from [:rn-fetch-blob] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:19:5-68
+MERGED from [:rn-fetch-blob] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:19:5-68
 MERGED from [com.google.firebase:firebase-messaging:23.1.1] /home/v2stech/.gradle/caches/transforms-3/44e5ecc664426ae3cb09dbf938a1b6da/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:26:5-68
 MERGED from [com.google.firebase:firebase-messaging:23.1.1] /home/v2stech/.gradle/caches/transforms-3/44e5ecc664426ae3cb09dbf938a1b6da/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:26:5-68
 MERGED from [com.google.android.gms:play-services-measurement-api:21.2.0] /home/v2stech/.gradle/caches/transforms-3/5c1afb37ce8b08496221b25c345b2907/transformed/jetified-play-services-measurement-api-21.2.0/AndroidManifest.xml:24:5-68
@@ -644,6 +664,8 @@ MERGED from [:react-native-firebase_messaging] /home/v2stech/My folder/gitProjec
 MERGED from [:react-native-firebase_messaging] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-79
 MERGED from [:react-native-community_netinfo] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/@react-native-community/netinfo/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-79
 MERGED from [:react-native-community_netinfo] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/@react-native-community/netinfo/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-79
+MERGED from [:rn-fetch-blob] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:25:5-79
+MERGED from [:rn-fetch-blob] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:25:5-79
 MERGED from [com.google.firebase:firebase-messaging:23.1.1] /home/v2stech/.gradle/caches/transforms-3/44e5ecc664426ae3cb09dbf938a1b6da/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:24:5-79
 MERGED from [com.google.firebase:firebase-messaging:23.1.1] /home/v2stech/.gradle/caches/transforms-3/44e5ecc664426ae3cb09dbf938a1b6da/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:24:5-79
 MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.8] /home/v2stech/.gradle/caches/transforms-3/db1428798f80c37830bd99f22be9c97c/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:24:5-79
@@ -762,6 +784,12 @@ ADDED from [:react-native-firebase_app] /home/v2stech/My folder/gitProjects/Mark
 		ADDED from [:react-native-firebase_app] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:29:13-35
 	android:name
 		ADDED from [:react-native-firebase_app] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:26:13-88
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from [:react-native-fs] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/react-native-fs/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-81
+MERGED from [:rn-fetch-blob] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:31:5-81
+MERGED from [:rn-fetch-blob] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:31:5-81
+	android:name
+		ADDED from [:react-native-fs] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/react-native-fs/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:22-78
 provider#com.imagepicker.ImagePickerProvider
 ADDED from [:react-native-image-picker] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-18:20
 	android:grantUriPermissions
@@ -788,6 +816,20 @@ ADDED from [:react-native-webview] /home/v2stech/My folder/gitProjects/Marketwor
 		ADDED from [:react-native-webview] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-37
 	android:name
 		ADDED from [:react-native-webview] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-83
+uses-permission#com.android.vending.CHECK_LICENSE
+ADDED from [:rn-fetch-blob] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-73
+	android:name
+		ADDED from [:rn-fetch-blob] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:22-70
+provider#com.RNFetchBlob.Utils.FileProvider
+ADDED from [:rn-fetch-blob] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:34:9-42:20
+	android:grantUriPermissions
+		ADDED from [:rn-fetch-blob] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:38:13-47
+	android:authorities
+		ADDED from [:rn-fetch-blob] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:36:13-60
+	android:exported
+		ADDED from [:rn-fetch-blob] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:37:13-37
+	android:name
+		ADDED from [:rn-fetch-blob] /home/v2stech/My folder/gitProjects/Marketworld/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:35:13-62
 uses-permission#android.permission.POST_NOTIFICATIONS
 ADDED from [com.google.firebase:firebase-messaging:23.1.1] /home/v2stech/.gradle/caches/transforms-3/44e5ecc664426ae3cb09dbf938a1b6da/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:25:5-77
 	android:name
