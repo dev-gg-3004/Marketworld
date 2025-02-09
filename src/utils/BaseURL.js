@@ -1,8 +1,5 @@
 import axios from "axios";
-
-export const BaseUrl="https://63491dba0b382d796c7dea90.mockapi.io"
-export const NewsUrl="https://newsapi.org/v2/everything?q=stockmarket&q=business&apiKey=b8d4e733d9494a8ba1bf1cdee93cb975"
-
+import { NewsUrl , BaseUrl } from "@env";
 
 export const loginUserApi = async (userName) =>
   await axios.get(
